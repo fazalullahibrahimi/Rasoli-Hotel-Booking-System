@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookings - Hotel Booking System</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body class="bg-gray-100">
+        <header class="bg-white shadow-md p-4 mb-8 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Bookings</h1>
+            <nav>
+                <a href="/" class="text-blue-500 hover:text-blue-700 mr-4">Home</a>
+                <a href="/hotels.html" class="text-blue-500 hover:text-blue-700">Hotels</a>
+            </nav>
+        </header>
+        <div class="container mx-auto px-4 py-8">
+            <div id="guestMessage" class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4"
+                style="display: none;">
+                <p class="font-bold">Guest User</p>
+                <p>You are viewing guest bookings. To manage your bookings and access all features, please <a
+                        href="/login.html" class="underline">log in</a> or <a href="/register.html"
+                        class="underline">register</a>.</p>
+            </div>
+            <div id="bookingsList" class="space-y-4"></div>
+        </div>
+        <script src="/js/main.js"></script>
+        <script src="/js/bookings.js"></script>
+    </body>
+
+</html>
